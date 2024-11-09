@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Discover Turkey</title>
+    <link rel="stylesheet" href="tourism.css" />
+    <link rel="icon" type="image/x-icon" href="dark-logo.svg">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="logo">
+          <img src="dark-logo.svg" class ="dark" >
+        </div>
+        <input type="text" class="search-bar" placeholder="Search" />
+        <ul>
+          <li><button class="login-btn">Login/Register</button></li>
+          <li><button class="hotels-btn">Hotels</button></li>
+          <li><button class="language-select">EN ▼</button></li>
+          <li><div class="menu-icon">☰</div></li>
+        </ul>
+      </div>
+    </header>
+
+    <section class="carousel">
+      <div class="slides">
+        <div class="slide">
+          <video autoplay muted loop>
+            <source src="2994491-hd_1920_1080_24fps.mp4" type="video/mp4" />
+          </video>
+          <h2 id="tourism">Tourism</h2>
+        </div>
+        <div class="slide">
+          <video autoplay muted loop>
+            <source
+              src="12193346_3840_2160_30fps.mp4"
+              type="video/mp4"
+            />
+          </video>
+          <h2 id="hotels">Hotels</h2>
+        </div>
+        <div class="slide">
+          <video autoplay muted loop>
+            <source src="green-destinations1.mp4" type="video/mp4" />
+          </video>
+          <h2 id="destination">Destinations</h2>
+        </div>
+        
+        <div class="slide">
+          <video autoplay muted loop>
+            <source src="12762154-uhd_3840_2160_25fps.mp4" type="video/mp4" />
+          </video>
+          <h2 id="history">History</h2>
+        </div>
+        <div class="slide">
+          <video autoplay muted loop>
+            <source
+              src="12600312_3840_2160_60fps.mp4"
+              type="video/mp4"
+            />
+          </video>
+          <h2 id="nature">Nature</h2>
+        </div>
+      </div>
+      <button class="arrow left" onclick="prevSlide()">&#10094;</button>
+      <button class="arrow right" onclick="nextSlide()">&#10095;</button>
+      <div class="indicator">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+       
+      </div>
+    </section>
+
+    <div class="container">
+      
+      <div class="main">
+        <h1 id="scroll1">All Turkey Experiences</h1>
+        <button>Tourism</button>
+      </div>
+    
+      <div class="cards">
+        <div class="card">
+          <img src="12-camping.jpg" alt="Istanbul Bucket List" />
+          <h3>Camping</h3>
+        </div>
+        <div class="card">
+          <img
+            src="2-nature.jpg"
+            alt="Hagia Sophia History & Experience Museum"
+          />
+          <h3>Nature</h3>
+        </div>
+        <div class="card">
+          <img src="cittaslow.jpg" alt="Istanbul Archaeological Museums" />
+          <h3>Cittaslow</h3>
+        </div>
+        <div class="card">
+          <img src="8-wellness.jpg" alt="Ephesus Experience Museum" />
+          <h3>Wellness</h3>
+        </div>
+        <div class="card">
+          <img src="national-parks.jpg" alt="Film Plateaus" />
+          <h3>National Parks</h3>
+        </div>
+        
+      </div>
+     
+    </div>
+   
+     
+
+    
+  <div id="box5" class="box1">
+    <video autoplay muted loop id="backgroundVideo">
+      <source src="green-destinations1.mp4" type="video/mp4">
+     
+  </video>
+  
+    <section class="destinations">
+      <div class="textcontent">
+        <h1>Sustainable <span>destinations</span></h1>
+        <button class="destinationbtn">More Info</button>
+      </div>
+  
+      
+      <div class="card1container">
+        
+        <div class="card2">
+          <img src="300x400-54.jpg" alt="Iznik" class="card-image">
+          <div class="card-overlay"></div>
+          <p class="cardtext">Iznik</p>
+        </div>
+        
+        
+        <div class="card2">
+          <img src="300x400-51.jpg" alt="Halfeti" class="card-image">
+          <div class="card-overlay"></div>
+          <p class="cardtext">Halfeti</p>
+        </div>
+        
+        <div class="card2">
+          <img src="300x400-47.jpg" alt="Güdül" class="card-image">
+          <div class="card-overlay"></div>
+          <p class="cardtext">Gudul</p>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div id="box6" class="box2">
+    <video autoplay muted loop id="backgroundVideo">
+      <source src="12193346_3840_2160_30fps.mp4" type="video/mp4">
+     
+  </video>
+    <section class="destinations">
+      <div class="textcontent">
+        <h1>Hotels</h1>
+        <button class="destinationbtn">All Hotels</button>
+      </div>
+  
+      
+      <div class="card1container">
+        
+        <div class="card2">
+          <img src="port-bosphorus-hotel.webp" alt="Iznik" class="card-image">
+          <div class="card-overlay"></div>
+          <p class="cardtext">Port Bhosphorus</p>
+        </div>
+        
+        
+        <div class="card2">
+          <img src="hotel-seashell-resort-spa.jpg" alt="Halfeti" class="card-image">
+          <div class="card-overlay"></div>
+          <p class="cardtext">Hotel Seashell Resort & Spa</p>
+        </div>
+        
+        <div class="card2">
+          <img src="urla-sahne.jpg" alt="Güdül" class="card-image">
+          <div class="card-overlay"></div>
+          <p class="cardtext">Urla Sahne</p>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div id="box7" class="box3">
+    <video autoplay muted loop id="backgroundVideo">
+      <source src="12762154-uhd_3840_2160_25fps.mp4" type="video/mp4">
+     
+  </video>
+    <section class="destinations">
+      <div class="textcontent">
+        <h1>Historical<span>Places</span></h1>
+        <button id="his"class="destinationbtn">More Info</button>
+      </div>
+  
+      
+      <div class="card1container">
+        
+        <div class="card2">
+          <img src="cea06954331c4fd2951f53db43f8914a.jpeg" alt="Iznik" class="card-image">
+          <div class="card-overlay"></div>
+          <p class="cardtext">Salt Cave</p>
+        </div>
+        
+        
+        <div class="card2">
+          <img src="2a13ba2302bd489189213ccba4b1b42f.webp" alt="Halfeti" class="card-image">
+          <div class="card-overlay"></div>
+          <p class="cardtext">Mount Nemrut</p>
+        </div>
+        
+        <div class="card2">
+          <img src="f3954f66b4634f228897278c18868dfa.jpeg" alt="Güdül" class="card-image">
+          <div class="card-overlay"></div>
+          <p class="cardtext">Cal Cave</p>
+        </div>
+      </div>
+    </section>
+  </div>
+  
+ 
+  <div id="box8" class="box4">
+    <video autoplay muted loop id="backgroundVideo">
+      <source src="12600312_3840_2160_60fps.mp4" type="video/mp4">
+     
+  </video>
+    <section class="destinations">
+      <div class="textcontent">
+        <h1>Nature <span>& Environment</span></h1>
+        <button id="nat" class="destinationbtn">More info</button>
+      </div>
+  
+      
+      <div class="card1container">
+        
+        <div class="card2">
+          <img src="67efd434b375453fb37c51fc09706f14.jpeg" alt="Iznik" class="card-image">
+          <div class="card-overlay"></div>
+          <p class="cardtext">Saklikapi Canyon</p>
+        </div>
+        
+        
+        <div class="card2">
+          <img src="blue-lagoon-oludeniz-gettyimages-866131096.webp" alt="Halfeti" class="card-image">
+          <div class="card-overlay"></div>
+          <p class="cardtext">Capodocia</p>
+        </div>
+        
+        <div class="card2">
+          <img src="lycian tombs dalyan-GettyImages-1280750522.webp" alt="Güdül" class="card-image">
+          <div class="card-overlay"></div>
+          <p class="cardtext">Lake Salda</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+    <footer>
+      <div class="footer-logo">
+        <img src="turkey logo.png" alt="Türkiye Logo" />
+      </div>
+      <div>Blogs</div>
+      <div class="icons">
+        <a href="https://www.facebook.com/GoTurkiye"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.instagram.com/goturkiye/"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://x.com/goturkiye"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.youtube.com/GoT%C3%BCrkiye"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+      <div class="copyright">Copyright © 2024 Turkey Tourism</div>
+
+      <div class="newsletter-section">
+        <h2>Newsletter</h2>
+        <h4 class="latest">Get the latest updates in Türkiye!</h4>
+        
+        <div class="newsletter-form">
+            <input type="email" placeholder="Enter your email address" class="email-input">
+            <button class="subscribe-btn">Subscribe</button>
+        </div>
+
+        <p class="disclaimer">
+            Your personal data is processed. By filling out the form, you confirm that you have read and accepted the 
+            <a href="#" class="clarification-link">Clarification Text</a>.
+        </p>
+    </div>
+    </footer>
+
+    <script src="tourism.js"></script>
+  </body>
+</html>
